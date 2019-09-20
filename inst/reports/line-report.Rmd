@@ -1,0 +1,23 @@
+---
+title: "Analysis of delays"
+author: "Mirai Labs"
+date: "`r Sys.time()`"
+output: html_document
+params:
+  line: -1
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Analysis of delays for line `r params$line`
+
+### Delays by hour for each weekday
+
+The following plot shows the distribution of delays by hour for each weekday.
+
+```{r echo=FALSE, fig.asp=1.5}
+data <- vbzdelays::get_line_data(params$line)
+vbzdelays::plot_delays_by_weekday_hour(data)
+```

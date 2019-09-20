@@ -28,3 +28,10 @@ Plot delays by hour per weekday
 ```r
 plot_delays_by_weekday_hour(data)
 ```
+
+Produce delay analysis report by line
+
+```r
+report <- render_line_report(line = 11, tempdir())
+browseURL(report)
+```
