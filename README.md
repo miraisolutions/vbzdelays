@@ -20,5 +20,11 @@ remotes::install_github("miraisolutions/vbzdelays")
 Load line data
 
 ``` r
-vbzdelays::get_line_data(line = 11)
+data <- vbzdelays::get_line_data(line = 11)
+```
+
+Plot delays by hour per weekday
+
+```r
+plot_delays_by_weekday_hour(data)
 ```
