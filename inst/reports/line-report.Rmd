@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 The following plot shows the distribution of delays by hour for each weekday.
 
-```{r delays-barplot, echo=FALSE, fig.asp=1.5}
+```{r, echo=FALSE, fig.asp=1.5}
 data <- vbzdelays::get_line_data(params$line)
 vbzdelays::plot_delays_by_weekday_hour(data)
 ```
