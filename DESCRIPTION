@@ -1,0 +1,14 @@
+Package: vbzdelays
+Title: VBZ Delay Analysis
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Mirai",
+           family = "Labs",
+           role = c("aut", "cre"),
+           email = "labs@mirai-solutions.com")
+Description: Analyze VBZ delays.
+License: GPL-3
+Depends: 
+    R (>= 3.5.0)
+Encoding: UTF-8
+LazyData: true
