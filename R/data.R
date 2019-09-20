@@ -18,3 +18,21 @@ get_line_data <- function(line) {
   line_file <- system.file("line-data", sprintf("line-%d.rds", line), package = "vbzdelays")
   readRDS(line_file)
 }
+
+
+#' Available lines
+#'
+#' Returns the lines for which data are available.
+#'
+#' @examples
+#' available_lines()
+#'
+#' @import dplyr
+#' @export
+available_lines <- function() {
+  pattern <- "^line-(\\d+)[.]rds$"
+  list.files(system.file("line-data", package = "vbzdelays"), pattern) %>%
+    sub(pattern, "\\1", .) %>%
+    as.integer() %>%
+    sort()
+}

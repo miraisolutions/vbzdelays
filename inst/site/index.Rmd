@@ -1,0 +1,13 @@
+--- 
+title: "VBZ Delays"
+author: "Mirai Solutions"
+date: "`r Sys.time()`"
+site: bookdown::bookdown_site
+output: 
+  bookdown::gitbook:
+    split_by: section
+---
+
+# Introduction
+
+For each line in the Zurich public network system (VBZ), expected and actual arrival and departure times are available for each connection between two stations. Raw data are provided on a weekly basis at https://data.stadt-zuerich.ch/dataset/vbz_fahrzeiten_ogd (see [Translation_Data_Attributes.pdf](https://github.com/OpenDataDayZurich2016/translations/blob/master/Translation_Data_Attributes.pdf) for details).

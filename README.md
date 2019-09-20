@@ -35,3 +35,10 @@ Produce delay analysis report by line
 report <- render_line_report(line = 11, tempdir())
 browseURL(report)
 ```
+
+Create a website as collection of reports for all lines
+
+```r
+website <- vbzdelays::render_site(output_dir = tempfile("_site"))
+browseURL(website)
+```
