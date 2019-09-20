@@ -8,6 +8,10 @@ output:
     split_by: section
 ---
 
+```{r include=FALSE}
+knitr::opts_chunk$set(fig.path = "figures/")
+```
+
 # Introduction
 
 For each line in the Zurich public network system (VBZ), expected and actual arrival and departure times are available for each connection between two stations. Raw data are provided on a weekly basis at https://data.stadt-zuerich.ch/dataset/vbz_fahrzeiten_ogd (see [Translation_Data_Attributes.pdf](https://github.com/OpenDataDayZurich2016/translations/blob/master/Translation_Data_Attributes.pdf) for details).
