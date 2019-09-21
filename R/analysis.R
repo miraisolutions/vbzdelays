@@ -15,5 +15,7 @@ count_delays_by_weekday_hour <- function(data, delay_breaks = 1:5) {
       hour = cut(hour, 0:48, labels = ifelse(0:47 < 24, 0:47, paste0("+", floor(0:47) - 24))),
       delay = cut(delay, c(-Inf, delay_breaks, Inf))
     ) %>%
-    summarize(count = n())
+    summarize(count = n()) %>%
+    group_by(weekday, hour) %>%
+    mutate(freq = count / sum(count))
 }
