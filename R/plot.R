@@ -1,8 +1,12 @@
 #' @import dplyr
 #' @import ggplot2
 barplot_by_weekday_hour <- function(delays) {
+  coverage_data <- delays %>%
+    group_by(weekday, hour) %>%
+    summarize(coverage = sprintf("%.0f%%", sum(freq)*100))
   ggplot(delays, aes(x = hour, y = count)) +
     geom_col(aes(fill = delay), position = "fill") +
+    geom_text(data = coverage_data, aes(label = coverage, y = 1), size = 2.5, vjust = 1) +
     lemon::facet_rep_wrap(~weekday, ncol = 1, repeat.tick.labels = TRUE) +
     theme(legend.justification = "top")
 }
