@@ -1,4 +1,4 @@
-# vbzdelays (development version)
+# vbzdelays 1.1.0
 
 * `plot_delays_by_weekday_hour()` extended with the percentage of delayed connections (#1).
 
