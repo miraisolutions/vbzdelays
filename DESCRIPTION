@@ -1,6 +1,6 @@
 Package: vbzdelays
 Title: VBZ Delay Analysis
-Version: 1.1.1
+Version: 1.1.1.9000
 Authors@R: 
     person(given = "Mirai",
            family = "Labs",
