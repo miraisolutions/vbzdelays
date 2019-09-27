@@ -1,7 +1,7 @@
 # Results by line
 
 ```{r, echo=FALSE, results='asis'}
-for (line in c(99, vbzdelays::available_lines())) {
+for (line in vbzdelays::available_lines()) {
   params <- list(line = line)
   cat(knitr::knit_child(
     system.file("reports", "line-report.Rmd", package = "vbzdelays"),
