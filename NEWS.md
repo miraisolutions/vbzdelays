@@ -1,4 +1,4 @@
-# vbzdelays (development version)
+# vbzdelays 1.1.1
 
 * Rendering of the full website is now tested on Travis upon PR (#7).
 
