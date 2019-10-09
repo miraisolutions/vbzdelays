@@ -23,7 +23,6 @@ barplot_by_weekday_hour <- function(delays) {
 #' plot_delays_by_weekday_hour(data)
 #'
 #' @import dplyr
-#' @import ggplot2
 #' @export
 plot_delays_by_weekday_hour <- function(data) {
   data %>%
