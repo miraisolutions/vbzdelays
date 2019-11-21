@@ -2,8 +2,8 @@
 compute_delay <- function(data) {
   data %>%
     mutate(
-      delay = ((actual_departure - scheduled_departure) +
-                 (actual_arrival - scheduled_arrival)) / 2 / 60
+      delay = mean(c((actual_departure - scheduled_departure),
+                     (actual_arrival - scheduled_arrival))) / 2 / 60
     )
 }
 
