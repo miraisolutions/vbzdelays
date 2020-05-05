@@ -2,7 +2,7 @@
 # vbzdelays
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.org/miraisolutions/vbzdelays.svg?branch=master)](https://travis-ci.org/miraisolutions/vbzdelays)
+[![Travis build status](https://travis-ci.com/miraisolutions/vbzdelays.svg?branch=master)](https://travis-ci.com/miraisolutions/vbzdelays)
 <!-- badges: end -->
 
 The goal of vbzdelays is to analyze VBZ delays.
